@@ -29,3 +29,12 @@ func TestFizzBuzzShouldSayFizz(t *testing.T) {
 		t.Errorf("it should say %s but got %s", want, got)
 	}
 }
+
+func TestFizzBuzzShouldSaySix(t *testing.T) {
+	got := fizzbuzz.Say(6)
+	want := "Fizz"
+
+	if want != got {
+		t.Errorf("it should say %s but got %s", want, got)
+	}
+}
