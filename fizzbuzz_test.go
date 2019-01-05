@@ -15,13 +15,13 @@ func TestFizzBuzzShouldSayTwo(t *testing.T) {
 	assertError(want, got, t)
 }
 
-func TestFizzBuzzShouldSayFizz(t *testing.T) {
+func TestFizzBuzzShouldSayFizzWhenGetThree(t *testing.T) {
 	got := fizzbuzz.Say(3)
 	want := "Fizz"
 	assertError(want, got, t)
 }
 
-func TestFizzBuzzShouldSaySix(t *testing.T) {
+func TestFizzBuzzShouldSayFizzWhenGetSix(t *testing.T) {
 	got := fizzbuzz.Say(6)
 	want := "Fizz"
 	assertError(want, got, t)
