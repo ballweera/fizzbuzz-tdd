@@ -1,9 +1,7 @@
 package fizzbuzz
 
-func Say(n int) string {
-	if n == 2 {
-		return "2"
-	}
+import "strconv"
 
-	return "1"
+func Say(n int) string {
+	return strconv.Itoa(n)
 }
