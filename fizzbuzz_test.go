@@ -27,6 +27,12 @@ func TestFizzBuzzShouldSayFizzWhenGetSix(t *testing.T) {
 	assertError(want, got, t)
 }
 
+func TestFizzBuzzShouldSayBuzzWhenGetFive(t *testing.T) {
+	got := fizzbuzz.Say(5)
+	want := "Buzz"
+	assertError(want, got, t)
+}
+
 func assertError(want, got string, t *testing.T) {
 	if want != got {
 		t.Errorf("it should say %s but got %s", want, got)
